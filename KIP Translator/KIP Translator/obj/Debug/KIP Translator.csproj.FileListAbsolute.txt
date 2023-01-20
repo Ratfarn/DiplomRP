@@ -1,0 +1,18 @@
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe.config
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\KIP Translator.pdb
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.AssemblyReference.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.SuggestedBindingRedirects.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\MainWindow.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\TranslatorPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\App.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator_MarkupCompile.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator_MarkupCompile.lref
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\MainWindow.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\TranslatorPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.g.resources
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP_Translator.Properties.Resources.resources
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.GenerateResource.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CoreCompileInputs.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.exe
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.pdb
