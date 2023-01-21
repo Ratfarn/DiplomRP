@@ -5,21 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KIP_Translator.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="383" d:DesignWidth="716"
       Title="TranslatorPage">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="103*"/>
-            <RowDefinition Height="114*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="357*"/>
-            <ColumnDefinition Width="443*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="TextWrite"  HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="306" Height="179" TextChanged="TextWrite_TextChanged" Grid.Row="0"/>
-        <TextBox x:Name="TextRead" HorizontalAlignment="Center" Margin="0,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="306" Height="179" Grid.Row="1"/>
-        <DataGrid x:Name="dataList" Margin="20,10,20,17" Grid.Column="1" />
+
+        <TextBox x:Name="TextWrite" Margin="20,103,390,101" Width="306" Height="179" TextChanged="TextWrite_TextChanged" Grid.Row="0"/>
+        <TextBox x:Name="TextRead"  Margin="388,103,22,101" Width="306" Height="179"/>
+        <Button Content="Button" Margin="338,103,338,246" Height="34" Width="40"/>
+        <ComboBox x:Name="inputLanguage" Margin="206,76,390,285" Width="120"/>
+        <ComboBox x:Name="outputLanguage" Margin="574,76,22,285" Width="120"/>
 
     </Grid>
 </Page>

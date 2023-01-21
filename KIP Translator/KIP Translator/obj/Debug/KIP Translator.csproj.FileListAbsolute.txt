@@ -16,3 +16,23 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CoreCompileInputs.cache
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.exe
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.pdb
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Buffers.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Memory.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Numerics.Vectors.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Encodings.Web.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\YandexLinguistics.NET.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Buffers.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Memory.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Numerics.Vectors.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Encodings.Web.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CopyComplete
