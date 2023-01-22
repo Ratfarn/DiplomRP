@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KIP_Translator"
         mc:Ignorable="d"
-        Title="KIP Translator" MinHeight="500" MinWidth="850" MaxHeight="500" MaxWidth="850" >
+        Title="KIP Translator" MinHeight="500" MinWidth="850" Height="500" Width="850" >
     <Grid Background="#51b6a2">
         <Grid.RowDefinitions>
             <RowDefinition Height="19*"/>
@@ -19,7 +19,7 @@
         <Frame x:Name="NextPage" NavigationUIVisibility="Hidden" Background="#ead9cd" Source="/Pages/TranslatorPage.xaml" Margin="0,76,0,0" Grid.Column="1" Grid.RowSpan="2"/>
         <Image Source="/Images/TranslatorLogo.png" Margin="10,10,10,10"/>
         <StackPanel Grid.Row="1">
-            <Button Content="Истроия" Margin="5,10,5,10"/>
+            <Button Content="История" Margin="5,10,5,10"/>
             <Button Content="Настройки" Margin="5,0,5,10"/>
 
         </StackPanel>

@@ -9,12 +9,21 @@
       Title="TranslatorPage">
 
     <Grid>
-
-        <TextBox x:Name="TextWrite" Margin="20,103,390,101" Width="306" Height="179" TextChanged="TextWrite_TextChanged" Grid.Row="0"/>
-        <TextBox x:Name="TextRead"  Margin="388,103,22,101" Width="306" Height="179"/>
-        <Button Content="Button" Margin="338,103,338,246" Height="34" Width="40"/>
-        <ComboBox x:Name="inputLanguage" Margin="206,76,390,285" Width="120"/>
-        <ComboBox x:Name="outputLanguage" Margin="574,76,22,285" Width="120"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="188*"/>
+            <RowDefinition Height="95*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="166*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextWrite" Margin="20,3,8,6"  TextChanged="TextWrite_TextChanged" Grid.Row="2"/>
+        <TextBox x:Name="TextRead"  Margin="4,3,22,6" Grid.Column="2" Grid.Row="2" />
+        <Button Content="Button" Margin="4,3,6,151" Height="34" Width="40" Grid.Column="1" Grid.Row="2"/>
+        <ComboBox x:Name="inputLanguage" Margin="206,4,8,2" Grid.Row="1" />
+        <ComboBox x:Name="outputLanguage" Margin="190,5,22,3" Grid.Column="2" Grid.Row="1" />
     </Grid>
 </Page>
