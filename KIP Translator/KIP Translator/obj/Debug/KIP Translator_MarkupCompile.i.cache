@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Visual studio\repos\KIP Translator\KIP Translator\App.xaml
-2-966186612
+3-1469026328
 
-91683016011
+101222226171
 25922701675
-MainWindow.xaml;Pages\TranslatorPage.xaml;
+MainWindow.xaml;Pages\settingsPage.xaml;Pages\TranslatorPage.xaml;
 
-False
+True
 

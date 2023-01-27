@@ -36,3 +36,5 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.xml
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CopyComplete
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.baml

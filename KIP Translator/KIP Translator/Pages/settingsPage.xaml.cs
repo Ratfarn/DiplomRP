@@ -16,18 +16,16 @@ using System.Windows.Shapes;
 namespace KIP_Translator.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для TranslatorPage.xaml
+    /// Логика взаимодействия для settingsPage.xaml
     /// </summary>
-    public partial class TranslatorPage : Page
+    public partial class settingsPage : Page
     {
-        public TranslatorPage()
+        public settingsPage()
         {
             InitializeComponent();
+            fontColors.SelectedIndex = 0;            
+
         }
 
-        private void textWrite_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            textRead.Text = textWrite.Text;
-        }
     }
 }
