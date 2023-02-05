@@ -20,9 +20,9 @@
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="166*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textWrite" Margin="20,3,8,6"  TextChanged="textWrite_TextChanged" Grid.Row="2"/>
-        <TextBox x:Name="textRead"  Margin="4,3,22,6" Grid.Column="2" Grid.Row="2" />
-        <Button x:Name="changeBtn" Content="Button" Margin="4,3,6,151" Height="34" Width="40" Grid.Column="1" Grid.Row="2"/>
+        <TextBox x:Name="textWrite" Margin="20,3,8,6" AcceptsReturn="True" Grid.Row="2"/>
+        <TextBox x:Name="textRead"  Margin="4,3,22,6" AcceptsReturn="True" Grid.Column="2" Grid.Row="2" />
+        <Button x:Name="changeBtn" Content="Button" Margin="4,3,6,151" Height="34" Width="40" Grid.Column="1" Grid.Row="2" Click="changeBtn_Click"/>
         <ComboBox x:Name="inputLanguage" Margin="206,4,8,2" Grid.Row="1" />
         <ComboBox x:Name="outputLanguage" Margin="190,5,22,3" Grid.Column="2" Grid.Row="1" />
     </Grid>

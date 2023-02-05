@@ -1,17 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+using System.Net.Http;
+using System.Web.Script.Serialization;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace KIP_Translator.Pages
 {
@@ -20,14 +12,40 @@ namespace KIP_Translator.Pages
     /// </summary>
     public partial class TranslatorPage : Page
     {
+        string langWrite;
+        string langRead;
         public TranslatorPage()
         {
             InitializeComponent();
         }
-
-        private void textWrite_TextChanged(object sender, TextChangedEventArgs e)
+        public string TranslateText(string input)
         {
-            textRead.Text = textWrite.Text;
+            string url = String.Format
+            ("https://translate.googleapis.com/translate_a/single?client=gtx&sl={0}&tl={1}&dt=t&q={2}",
+             "vi", "en", Uri.EscapeUriString(input));
+
+            HttpClient httpClient = new HttpClient();//создание нового экземпляра HTTP-запроса
+            string result = httpClient.GetStringAsync(url).Result;// получение json 
+
+            var jsonData = new JavaScriptSerializer().Deserialize<List<dynamic>>(result);
+
+            var translationItems = jsonData[0];
+
+            string translation = "";
+            foreach (object item in translationItems)//обработка запроса (выявление текста из запроса)
+            {
+                IEnumerable translationLineObject = item as IEnumerable;
+                IEnumerator translationLineString = translationLineObject.GetEnumerator();
+                translationLineString.MoveNext();
+                translation += string.Format(" {0}", Convert.ToString(translationLineString.Current));
+            }
+            if (translation.Length > 1) { translation = translation.Substring(1); };
+            return translation;
+        }
+
+        private void changeBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            textRead.Text = TranslateText(textWrite.Text);
         }
     }
 }
