@@ -5,20 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KIP_Translator.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="175" d:DesignWidth="92"
+      d:DesignHeight="190" d:DesignWidth="92"
       Title="settingsPage">
 
     <Grid Background="#ead9cd">
         <Slider HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label Content="Шрифт" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Цвет шрифта:" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Width="92"/>
         <ComboBox x:Name="fontColors" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" >
-            <TextBlock Text="цвет"/>
             <TextBlock Text="Зелёный"/>
             <TextBlock Text="Красный"/>
             <TextBlock Text="Синий"/>
             <TextBlock Text="Чёрный"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" Text="Размер:" VerticalAlignment="Top" Width="80"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" Text="Размер шрифта:" VerticalAlignment="Top" Width="92"/>
+        <Button x:Name="AddLang" Content="Добавить язык" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Click="AddLang_Click"/>
 
     </Grid>
 </Page>

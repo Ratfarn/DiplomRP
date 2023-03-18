@@ -8,10 +8,12 @@ namespace KIP_Translator
 {
     internal class CoreProject
     {
-        /* 
-         * 
-         * место для подключения к базе данных
-         * 
-         */
+        private static Entities _context;
+        public static Entities GetContext()
+        {
+            if (_context == null)
+                _context = new Entities();
+            return _context;
+        }
     }
 }

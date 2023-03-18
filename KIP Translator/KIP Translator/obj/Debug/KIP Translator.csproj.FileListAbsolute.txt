@@ -38,3 +38,11 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CopyComplete
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.g.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\ru\EntityFramework.resources.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator_Content.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.baml

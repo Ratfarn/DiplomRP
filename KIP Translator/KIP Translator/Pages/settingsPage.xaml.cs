@@ -22,10 +22,13 @@ namespace KIP_Translator.Pages
     {
         public settingsPage()
         {
-            InitializeComponent();
-            fontColors.SelectedIndex = 0;            
-
+            InitializeComponent();           
         }
 
+        private void AddLang_Click(object sender, RoutedEventArgs e)
+        {
+            AddLangWindow Window = new AddLangWindow();
+            Window.Show();
+        }
     }
 }
