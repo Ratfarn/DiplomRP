@@ -122,6 +122,9 @@
     <Compile Include="Langs.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\historyPage.xaml.cs">
+      <DependentUpon>historyPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\settingsPage.xaml.cs">
       <DependentUpon>settingsPage.xaml</DependentUpon>
     </Compile>
@@ -144,6 +147,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\historyPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\settingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

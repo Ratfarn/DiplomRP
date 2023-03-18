@@ -46,3 +46,53 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\ru\EntityFramewor
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator_Content.g.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.g.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.baml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe.config
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\KIP Translator.pdb
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\EntityFramework.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Buffers.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Memory.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Numerics.Vectors.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Text.Encodings.Web.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\YandexLinguistics.NET.dll
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\EntityFramework.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Buffers.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Memory.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Numerics.Vectors.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Text.Encodings.Web.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.xml
+D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\ru\EntityFramework.resources.dll
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.AssemblyReference.cache
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.SuggestedBindingRedirects.cache
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\MainWindow.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\Pages\TranslatorPage.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\App.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator_Content.g.cs
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator_MarkupCompile.cache
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator_MarkupCompile.lref
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.baml
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\MainWindow.baml
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.baml
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\Pages\TranslatorPage.baml
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.baml
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.g.resources
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP_Translator.Properties.Resources.resources
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.GenerateResource.cache
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CoreCompileInputs.cache
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CopyComplete
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.exe
+D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.pdb

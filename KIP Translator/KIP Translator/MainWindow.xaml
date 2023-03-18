@@ -19,7 +19,7 @@
         <Frame x:Name="nextPage" NavigationUIVisibility="Hidden" Background="#ead9cd" Source="/Pages/TranslatorPage.xaml" Margin="0,76,0,0" Grid.Column="1" Grid.RowSpan="2"/>
         <Image Source="/Images/TranslatorLogo.png" Margin="10,10,10,10"/>
         <StackPanel Grid.Row="1">
-            <Button x:Name="historyBtn" Content="История" Margin="5,10,5,10"/>
+            <Button x:Name="historyBtn" Content="История" Margin="5,10,5,10" Click="historyBtn_Click"/>
             <Button x:Name="settingsBtn" Content="Настройки" Margin="5,0,5,10" Click="settingsBtn_Click"/>
             <Frame x:Name="settingsFrame" NavigationUIVisibility="Hidden" Source="Pages/settingsPage.xaml" Visibility="Hidden" Margin="5,0,5,0" MouseEnter="settingsFrame_MouseEnter" MouseLeave="settingsFrame_MouseLeave"/>
 

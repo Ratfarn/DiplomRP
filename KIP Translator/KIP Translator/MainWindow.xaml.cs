@@ -54,5 +54,10 @@ namespace KIP_Translator
         {
             settingsFrame.Visibility = Visibility.Visible;
         }
+
+        private void historyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            nextPage.NavigationService.Navigate(new Pages.historyPage());
+        }
     }
 }
