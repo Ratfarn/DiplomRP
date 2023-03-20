@@ -96,3 +96,5 @@ D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CoreC
 D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CopyComplete
 D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.exe
 D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.pdb
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.baml

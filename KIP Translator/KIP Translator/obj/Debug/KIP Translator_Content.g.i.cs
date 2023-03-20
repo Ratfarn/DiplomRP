@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dbproject.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dbproject.tt")]
 
 

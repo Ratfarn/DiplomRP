@@ -101,26 +101,26 @@
       <DependentUpon>AddLangWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="CoreProject.cs" />
-    <Compile Include="DB.Context.cs">
+    <Compile Include="DBProject.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.Context.tt</DependentUpon>
+      <DependentUpon>DBProject.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB.cs">
+    <Compile Include="DBProject.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBProject.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB.Designer.cs">
+    <Compile Include="DBProject.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.edmx</DependentUpon>
+      <DependentUpon>DBProject.edmx</DependentUpon>
     </Compile>
     <Compile Include="History.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBProject.tt</DependentUpon>
     </Compile>
     <Compile Include="Langs.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBProject.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\historyPage.xaml.cs">
       <DependentUpon>historyPage.xaml</DependentUpon>
@@ -129,7 +129,7 @@
       <DependentUpon>settingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>DBProject.tt</DependentUpon>
     </Compile>
     <Page Include="AddLangWindow.xaml">
       <SubType>Designer</SubType>
@@ -181,12 +181,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DB.edmx">
+    <EntityDeploy Include="DBProject.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBProject.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DB.edmx.diagram">
-      <DependentUpon>DB.edmx</DependentUpon>
+    <None Include="DBProject.edmx.diagram">
+      <DependentUpon>DBProject.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -201,19 +201,19 @@
     <Resource Include="Images\TranslatorLogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DB.Context.cs</LastGenOutput>
-      <DependentUpon>DB.edmx</DependentUpon>
-    </Content>
-    <Content Include="DB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB.edmx</DependentUpon>
-      <LastGenOutput>DB.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="DBProject.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBProject.edmx</DependentUpon>
+      <LastGenOutput>DBProject.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DBProject.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBProject.edmx</DependentUpon>
+      <LastGenOutput>DBProject.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

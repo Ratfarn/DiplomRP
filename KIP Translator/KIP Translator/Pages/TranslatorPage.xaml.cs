@@ -13,6 +13,7 @@ namespace KIP_Translator.Pages
     {
         private string lWrite;
         private string lRead;
+        private DateTime thisdate;
         public List<Langs> GetLang { get; set; }
         public TranslatorPage()
         {
@@ -21,6 +22,7 @@ namespace KIP_Translator.Pages
             GetLang = CoreProject.GetContext().Langs.ToList();
             inputLang.SelectedIndex = 0;
             outputLang.SelectedIndex = 0;
+            thisdate = DateTime.Today;
         }
 
         public string TranslateText(string input, string lWrite, string lRead)
@@ -50,8 +52,14 @@ namespace KIP_Translator.Pages
 
         private void changeBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            History hist = new History();
             //MessageBox.Show("Не доработано","Предупреждение");
             textRead.Text = TranslateText(textWrite.Text , lWrite, lRead);
+            hist.TranslateSource = textWrite.Text;
+            hist.TranslateTarget = textRead.Text;
+            hist.Date = thisdate;
+            hist.IdLangIn = inputLang.SelectedIndex;
+            hist.IdLangOut = outputLang.SelectedIndex;
         }
 
         private void inputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)

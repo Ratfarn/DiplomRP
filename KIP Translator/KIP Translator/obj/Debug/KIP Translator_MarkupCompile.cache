@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\
 KIP_Translator
 none
 false
 DEBUG;TRACE
-D:\Diplom V1\KIP Translator\KIP Translator\App.xaml
+D:\Visual studio\repos\KIP Translator\KIP Translator\App.xaml
 51121624954
-2-507029189
-162057748846
-32262724757
+2977013623
+16779767319
+32-1503055547
 AddLangWindow.xaml;MainWindow.xaml;Pages\historyPage.xaml;Pages\settingsPage.xaml;Pages\TranslatorPage.xaml;
 
 False

@@ -12,7 +12,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TranslateSource" Type="nvarchar(max)" Nullable="false" />
           <Property Name="TranslateTarget" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
           <Property Name="IdLangIn" Type="int" Nullable="false" />
           <Property Name="IdLangOut" Type="int" Nullable="false" />
         </EntityType>
@@ -83,7 +83,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TranslateSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TranslateTarget" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="IdLangIn" Type="Int32" Nullable="false" />
           <Property Name="IdLangOut" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Langs" Relationship="Self.FK_History_Langs" FromRole="History" ToRole="Langs" />

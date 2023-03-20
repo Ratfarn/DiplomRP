@@ -17,20 +17,20 @@
             <ColumnDefinition Width="617*"/>
             <ColumnDefinition Width="183*"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="historyList" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1">
+        <ListView x:Name="historyList" ScrollViewer.VerticalScrollBarVisibility="Disabled" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
                         <WrapPanel>
-                            <TextBlock Text="ДАТА "/>
+                            <TextBlock Text="{Binding Date}"/>
                             <WrapPanel>
                                 <StackPanel>
-                                    <TextBlock Text=" ЯЗЫК С..."/>
-                                    <TextBlock Text=" ТЕКСТ НА ПЕРЕВОД"/>
+                                    <TextBlock Text="{Binding History.Langs.NameLang}"/>
+                                    <TextBlock Text="{Binding TranslateSource}"/>
                                 </StackPanel>
                                 <StackPanel>
-                                    <TextBlock Text=" ЯЗЫК НА..."/>
-                                    <TextBlock Text=" ПЕРЕВОД ТЕКСТА"/>
+                                    <TextBlock Text="{Binding History.Langs.NameLang}"/>
+                                    <TextBlock Text="{Binding TranslateTarget}"/>
                                 </StackPanel>
                             </WrapPanel>
                         </WrapPanel>
