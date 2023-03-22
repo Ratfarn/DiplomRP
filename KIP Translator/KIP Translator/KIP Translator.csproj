@@ -214,6 +214,7 @@
       <DependentUpon>DBProject.edmx</DependentUpon>
       <LastGenOutput>DBProject.cs</LastGenOutput>
     </Content>
+    <Resource Include="Images\trash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

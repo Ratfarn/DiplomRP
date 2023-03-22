@@ -6,15 +6,18 @@ using System.Net.Http;
 using System.Web.Script.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Threading;
+using System.Windows.Input;
 
 namespace KIP_Translator.Pages
 {
     public partial class TranslatorPage : Page
     {
-        private string lWrite;
-        private string lRead;
-        private DateTime thisdate;
+        private string _lWrite;
+        private string _lRead;
+        private DateTime _thisDate;
         public List<Langs> GetLang { get; set; }
+
         public TranslatorPage()
         {
             InitializeComponent();
@@ -22,14 +25,16 @@ namespace KIP_Translator.Pages
             GetLang = CoreProject.GetContext().Langs.ToList();
             inputLang.SelectedIndex = 0;
             outputLang.SelectedIndex = 0;
-            thisdate = DateTime.Today;
+            _thisDate = DateTime.Today;
+            _thisDate.ToShortDateString();
+
         }
 
-        public string TranslateText(string input, string lWrite, string lRead)
+        public string TranslateText(string input, string _lWrite, string _lRead)
         {
             string url = String.Format
             ("https://translate.googleapis.com/translate_a/single?client=gtx&sl={0}&tl={1}&dt=t&q={2}",
-             lWrite, lRead, Uri.EscapeUriString(input));
+             _lWrite, _lRead, Uri.EscapeUriString(input));
 
             HttpClient httpClient = new HttpClient();//создание нового экземпляра HTTP-запроса
             string result = httpClient.GetStringAsync(url).Result;// получение json 
@@ -52,26 +57,38 @@ namespace KIP_Translator.Pages
 
         private void changeBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            History hist = new History();
-            //MessageBox.Show("Не доработано","Предупреждение");
-            textRead.Text = TranslateText(textWrite.Text , lWrite, lRead);
-            hist.TranslateSource = textWrite.Text;
-            hist.TranslateTarget = textRead.Text;
-            hist.Date = thisdate;
-            hist.IdLangIn = inputLang.SelectedIndex;
-            hist.IdLangOut = outputLang.SelectedIndex;
+            inputLang.SelectedItem = outputLang.SelectedItem;
+            outputLang.SelectedItem = inputLang.SelectedItem;
         }
 
         private void inputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = CoreProject.GetContext().Langs.ToList();
-            lWrite = item.First(x => x == inputLang.SelectedItem as Langs).CodeLang;
+            _lWrite = item.First(x => x == inputLang.SelectedItem as Langs).CodeLang;
         }
 
         private void outputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = CoreProject.GetContext().Langs.ToList();
-            lRead = item.First(x => x == outputLang.SelectedItem as Langs).CodeLang;
+            _lRead = item.First(x => x == outputLang.SelectedItem as Langs).CodeLang;
+        }
+
+        private void textWrite_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                textRead.Text = TranslateText(textWrite.Text, _lWrite, _lRead);
+
+                History hist = new History();
+                hist.TranslateSource = textWrite.Text;
+                hist.TranslateTarget = textRead.Text;
+                hist.Date = _thisDate;
+                hist.IdLangIn = inputLang.SelectedIndex + 1;
+                hist.IdLangOut = outputLang.SelectedIndex + 1;
+
+                CoreProject.GetContext().History.Add(hist);
+                CoreProject.GetContext().SaveChanges();
+            }
         }
     }
 }

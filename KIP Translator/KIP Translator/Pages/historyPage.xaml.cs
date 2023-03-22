@@ -28,7 +28,7 @@ namespace KIP_Translator.Pages
             InitializeComponent();
             DataContext = this;
             LangUpdate();
-            //HistoryUpdate();
+            HistoryUpdate();
         }
 
         private void delLang_Click(object sender, RoutedEventArgs e)
@@ -54,6 +54,16 @@ namespace KIP_Translator.Pages
         {
             ThisHistory = CoreProject.GetContext().History.ToList();
             historyList.ItemsSource = ThisHistory;
+        }
+
+        private void DelHist_Click(object sender, RoutedEventArgs e)
+        {
+            var item = historyList.SelectedItem as History;
+            if (item != null) {
+                CoreProject.GetContext().History.Remove(item);
+                CoreProject.GetContext().SaveChanges();
+                HistoryUpdate();
+            }
         }
     }
 }
