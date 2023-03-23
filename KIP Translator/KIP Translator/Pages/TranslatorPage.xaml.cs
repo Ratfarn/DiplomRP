@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace KIP_Translator.Pages
 {
@@ -16,20 +17,25 @@ namespace KIP_Translator.Pages
         private string _lWrite;
         private string _lRead;
         private DateTime _thisDate;
-        public List<Langs> GetLang { get; set; }
 
+        public List<Langs> GetLang { get; set; }
         public TranslatorPage()
         {
             InitializeComponent();
             DataContext = this;
-            GetLang = CoreProject.GetContext().Langs.ToList();
+            Update();
             inputLang.SelectedIndex = 0;
             outputLang.SelectedIndex = 0;
             _thisDate = DateTime.Today;
             _thisDate.ToShortDateString();
 
+            Properties.Settings.Default.PropertyChanged += Settings_PropertyChanged; 
         }
-
+        private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            textWrite.FontSize = Properties.Settings.Default.fontSizeValue;
+            textRead.FontSize = Properties.Settings.Default.fontSizeValue;
+        }
         public string TranslateText(string input, string _lWrite, string _lRead)
         {
             string url = String.Format
@@ -89,6 +95,12 @@ namespace KIP_Translator.Pages
                 CoreProject.GetContext().History.Add(hist);
                 CoreProject.GetContext().SaveChanges();
             }
+        }
+        private void Update() 
+        {
+            GetLang = CoreProject.GetContext().Langs.ToList();
+            inputLang.ItemsSource = GetLang;
+            outputLang.ItemsSource = GetLang;
         }
     }
 }

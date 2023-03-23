@@ -23,14 +23,14 @@
         <TextBox x:Name="textWrite" TextWrapping="Wrap" AcceptsReturn="False" Margin="20,3,8,6" Grid.Row="2" PreviewKeyDown="textWrite_PreviewKeyDown" />
         <TextBox x:Name="textRead" TextWrapping="Wrap" Margin="4,3,22,6" AcceptsReturn="false" Grid.Column="2" Grid.Row="2" />
         <Button x:Name="changeBtn" Content="Button" Margin="4,3,6,151" Height="34" Width="40" Grid.Column="1" Grid.Row="2" Click="changeBtn_Click"/>
-        <ComboBox x:Name="inputLang" HorizontalAlignment="Right" Margin="0,4,9,0" Grid.Row="1" ItemsSource="{Binding GetLang}" SelectionChanged="inputLang_SelectionChanged" MinWidth="158">
+        <ComboBox x:Name="inputLang" HorizontalAlignment="Right" Margin="0,4,9,0" Grid.Row="1" SelectionChanged="inputLang_SelectionChanged" MinWidth="158">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding NameLang}"/>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <ComboBox x:Name="outputLang" HorizontalAlignment="Right" Margin="0,4,22,0" Grid.Column="2" Grid.Row="1" ItemsSource="{Binding GetLang}" SelectionChanged="outputLang_SelectionChanged" MinWidth="158">
+        <ComboBox x:Name="outputLang" HorizontalAlignment="Right" Margin="0,4,22,0" Grid.Column="2" Grid.Row="1" SelectionChanged="outputLang_SelectionChanged" MinWidth="158">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding NameLang}"/>

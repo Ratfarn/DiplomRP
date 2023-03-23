@@ -30,5 +30,11 @@ namespace KIP_Translator.Pages
             AddLangWindow Window = new AddLangWindow();
             Window.Show();
         }
+
+        private void fontSizeValue_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Properties.Settings.Default.fontSizeValue = fontSizeValue.Value;
+            Properties.Settings.Default.Save();
+        }
     }
 }
