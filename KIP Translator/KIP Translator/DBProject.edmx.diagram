@@ -4,10 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="627f1919512d43bba37f115bde0dc3f6" Name="Diagram1">
+      <Diagram DiagramId="b9238e406f3b43ed8bcac89bf0b1d28a" Name="Diagram1">
         <EntityTypeShape EntityType="DBLangModel.History" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="DBLangModel.Langs" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBLangModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="DBLangModel.FK_History_Langs" ManuallyRouted="false" />
         <AssociationConnector Association="DBLangModel.FK_History_Langs1" ManuallyRouted="false" />
       </Diagram>

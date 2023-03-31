@@ -23,6 +23,7 @@ namespace KIP_Translator
     public partial class MainWindow : Window
     {
         DispatcherTimer timer = new DispatcherTimer();
+        TranslatorPage page;
         public MainWindow()
         {
             InitializeComponent();

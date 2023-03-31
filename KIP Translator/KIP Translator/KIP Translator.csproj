@@ -8,12 +8,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>KIP_Translator</RootNamespace>
     <AssemblyName>KIP Translator</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,6 +63,7 @@
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Text.Encodings.Web, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.4.7.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
@@ -127,9 +129,6 @@
     </Compile>
     <Compile Include="Pages\settingsPage.xaml.cs">
       <DependentUpon>settingsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>DBProject.tt</DependentUpon>
     </Compile>
     <Page Include="AddLangWindow.xaml">
       <SubType>Designer</SubType>
@@ -204,6 +203,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DBProject.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBProject.edmx</DependentUpon>
@@ -214,7 +216,8 @@
       <DependentUpon>DBProject.edmx</DependentUpon>
       <LastGenOutput>DBProject.cs</LastGenOutput>
     </Content>
-    <Resource Include="Images\trash.png" />
+    <Resource Include="Images\speech.png" />
+    <Resource Include="Images\changeLang.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

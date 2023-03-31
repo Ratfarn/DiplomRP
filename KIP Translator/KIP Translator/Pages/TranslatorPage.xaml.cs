@@ -6,9 +6,9 @@ using System.Net.Http;
 using System.Web.Script.Serialization;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Threading;
 using System.Windows.Input;
-using System.Windows.Media;
+using System.Speech.Synthesis;
+using System.Speech.Recognition; //здесь подключение библиотеки на которую ругается
 
 namespace KIP_Translator.Pages
 {
@@ -17,19 +17,31 @@ namespace KIP_Translator.Pages
         private string _lWrite;
         private string _lRead;
         private DateTime _thisDate;
+        public SpeechRecognitionEngine RecogEngine = new SpeechRecognitionEngine();
 
         public List<Langs> GetLang { get; set; }
         public TranslatorPage()
         {
             InitializeComponent();
             DataContext = this;
-            Update();
+
+            GetLang = CoreProject.GetContext().Langs.ToList();
+            inputLang.ItemsSource = GetLang;
+            outputLang.ItemsSource = GetLang;
+
             inputLang.SelectedIndex = 0;
             outputLang.SelectedIndex = 0;
+
             _thisDate = DateTime.Today;
             _thisDate.ToShortDateString();
 
-            Properties.Settings.Default.PropertyChanged += Settings_PropertyChanged; 
+            Properties.Settings.Default.PropertyChanged += Settings_PropertyChanged;
+
+            // рекогназер
+            RecogEngine.SpeechRecognized += _recogEngine_SpeechRecognized;
+            Grammar dictationGrammar = new DictationGrammar();
+            // Устанавливаем грамматику для распознавателя речи
+            RecogEngine.LoadGrammar(dictationGrammar);
         }
         private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
@@ -96,11 +108,53 @@ namespace KIP_Translator.Pages
                 CoreProject.GetContext().SaveChanges();
             }
         }
-        private void Update() 
+
+        private static void TextToSpeech(string a)
         {
-            GetLang = CoreProject.GetContext().Langs.ToList();
-            inputLang.ItemsSource = GetLang;
-            outputLang.ItemsSource = GetLang;
+            SpeechSynthesizer _speech = new SpeechSynthesizer();
+            _speech.Speak(a);
+            _speech.Dispose();
+        }
+
+        private void sourceSpeech_Click(object sender, RoutedEventArgs e)
+        {
+            if (textWrite.Text != string.Empty) 
+            {
+                TextToSpeech(textWrite.Text);
+            }
+        }
+
+        private void targetSpeech_Click(object sender, RoutedEventArgs e)
+        {
+            if (textRead.Text != string.Empty)
+            {
+                TextToSpeech(textRead.Text);
+            }
+        }
+
+        private void _recogEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e) 
+        {
+            string text = e.Result.Text;
+            textWrite.Text = text;
+        }
+        // преобразование голоса в текст
+        private void speechBtn_Checked(object sender, RoutedEventArgs e)
+        {
+            //if (speechBtn.IsChecked == true)
+            //{
+            //    RecogEngine.SetInputToDefaultAudioDevice();
+            //    if (RecogEngine.State == SpeechRecognitionEngineState.Stopped) //ругается только на State и SpeechRecognitionEngineState
+            //    {
+            //        RecogEngine.RecognizeAsync(RecognizeMode.Multiple);
+            //    }
+            //}
+            //else
+            //{
+            //    if (RecogEngine.State == SpeechRecognitionEngineState.Recognizing) // здесь тоже самое! и я не знаю как это решить
+            //    {
+            //        RecogEngine.RecognizeAsyncStop();
+            //    }
+            //}
         }
     }
 }

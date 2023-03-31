@@ -25,17 +25,35 @@ namespace KIP_Translator
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void addLangBtn_Click(object sender, RoutedEventArgs e)
         {
-            Langs AddLangs = new Langs();
+            if (NameLangText.Text != string.Empty && CodeLangText.Text != string.Empty)
+            {
+                Langs AddLangs = new Langs();
 
-            AddLangs.NameLang = NameLangText.Text;
-            AddLangs.CodeLang = CodeLangText.Text;
+                AddLangs.NameLang = NameLangText.Text;
+                AddLangs.CodeLang = CodeLangText.Text;
 
-            CoreProject.GetContext().Langs.Add(AddLangs);
-            CoreProject.GetContext().SaveChanges();
-            
-            this.Close();
+                CoreProject.GetContext().Langs.Add(AddLangs);
+                CoreProject.GetContext().SaveChanges();
+
+                this.Close();
+            }
+            else { MessageBox.Show("Заполните все поля","ВНИМАНИЕ"); }
+        }
+
+        private void CodeLangText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (CodeLangText.Text.Length > 2)
+            {
+                CodeLangText.Background = new SolidColorBrush(Colors.Red);
+                addLangBtn.IsEnabled = false;
+            }
+            else
+            {
+                CodeLangText.Background = new SolidColorBrush(Colors.White);
+                addLangBtn.IsEnabled = true;
+            }
         }
     }
 }

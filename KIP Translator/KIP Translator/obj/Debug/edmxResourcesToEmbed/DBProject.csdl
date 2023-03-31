@@ -23,16 +23,6 @@
     <NavigationProperty Name="History" Relationship="Self.FK_History_Langs" FromRole="Langs" ToRole="History" />
     <NavigationProperty Name="History1" Relationship="Self.FK_History_Langs1" FromRole="Langs" ToRole="History" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <Association Name="FK_History_Langs">
     <End Role="Langs" Type="Self.Langs" Multiplicity="1" />
     <End Role="History" Type="Self.History" Multiplicity="*" />
@@ -60,7 +50,6 @@
   <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="History" EntityType="Self.History" />
     <EntitySet Name="Langs" EntityType="Self.Langs" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <AssociationSet Name="FK_History_Langs" Association="Self.FK_History_Langs">
       <End Role="Langs" EntitySet="Langs" />
       <End Role="History" EntitySet="History" />
