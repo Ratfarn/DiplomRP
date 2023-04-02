@@ -9,6 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Speech.Synthesis;
 using System.Speech.Recognition; //здесь подключение библиотеки на которую ругается
+using System.Globalization;
 
 namespace KIP_Translator.Pages
 {
@@ -17,7 +18,8 @@ namespace KIP_Translator.Pages
         private string _lWrite;
         private string _lRead;
         private DateTime _thisDate;
-        public SpeechRecognitionEngine RecogEngine = new SpeechRecognitionEngine();
+        //CultureInfo culture = new CultureInfo("ru-ru");
+        public static SpeechRecognitionEngine RecogEngine = new SpeechRecognitionEngine();
 
         public List<Langs> GetLang { get; set; }
         public TranslatorPage()
@@ -136,25 +138,20 @@ namespace KIP_Translator.Pages
         {
             string text = e.Result.Text;
             textWrite.Text = text;
+            
         }
         // преобразование голоса в текст
         private void speechBtn_Checked(object sender, RoutedEventArgs e)
         {
-            //if (speechBtn.IsChecked == true)
-            //{
-            //    RecogEngine.SetInputToDefaultAudioDevice();
-            //    if (RecogEngine.State == SpeechRecognitionEngineState.Stopped) //ругается только на State и SpeechRecognitionEngineState
-            //    {
-            //        RecogEngine.RecognizeAsync(RecognizeMode.Multiple);
-            //    }
-            //}
-            //else
-            //{
-            //    if (RecogEngine.State == SpeechRecognitionEngineState.Recognizing) // здесь тоже самое! и я не знаю как это решить
-            //    {
-            //        RecogEngine.RecognizeAsyncStop();
-            //    }
-            //}
+            if (speechBtn.IsChecked == true)
+            {
+                RecogEngine.SetInputToDefaultAudioDevice();
+                RecogEngine.RecognizeAsync(RecognizeMode.Single);
+            }
+            else
+            {
+                RecogEngine.RecognizeAsyncStop();
+            }
         }
     }
 }
