@@ -20,9 +20,9 @@
         <Image Source="/Images/TranslatorLogo.png" Margin="10,10,10,10"/>
         <StackPanel Grid.Row="1">
             <Button x:Name="historyBtn" Content="История" Margin="5,10,5,10" Click="historyBtn_Click"/>
+            <Button x:Name="imageConvertBtn" Content="Текст с фото" Margin="5,0,5,10" Click="imageConvertBtn_Click"/>
             <Button x:Name="settingsBtn" Content="Настройки" Margin="5,0,5,10" Click="settingsBtn_Click"/>
             <Frame x:Name="settingsFrame" NavigationUIVisibility="Hidden" Source="Pages/settingsPage.xaml" Visibility="Hidden" Margin="5,0,5,0" MouseEnter="settingsFrame_MouseEnter" MouseLeave="settingsFrame_MouseLeave"/>
-
         </StackPanel>
         <Label Grid.Column="1" Content="Переведено с помощью" Margin="10,10,459,30" RenderTransformOrigin="0.5,0.5" />
 

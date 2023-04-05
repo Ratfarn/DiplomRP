@@ -60,5 +60,10 @@ namespace KIP_Translator
         {
             nextPage.NavigationService.Navigate(new Pages.historyPage());
         }
+
+        private void imageConvertBtn_Click(object sender, RoutedEventArgs e)
+        {
+            nextPage.NavigationService.Navigate(new Pages.imageToTextPage());
+        }
     }
 }

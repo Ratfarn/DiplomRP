@@ -25,7 +25,6 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Encod
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.dll
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.dll
-D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\YandexLinguistics.NET.dll
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Buffers.xml
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Memory.xml
@@ -98,3 +97,11 @@ D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.exe
 D:\Diplom V1\KIP Translator\KIP Translator\obj\Debug\KIP Translator.pdb
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.g.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\imageToTextPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Pages\imageToTextPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x86\leptonica-1.82.0.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x86\tesseract50.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x64\leptonica-1.82.0.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x64\tesseract50.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\Tesseract.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

@@ -1,0 +1,31 @@
+﻿<Page x:Class="KIP_Translator.Pages.imageToTextPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KIP_Translator.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="383" d:DesignWidth="716"
+      Title="imageToTextPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="342*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imagePic" Margin="10,10,10,10" Grid.Row="1"/>
+        <TextBox x:Name="imageText" Grid.Column="1" AcceptsReturn="False" Margin="10,10,10,10" Grid.Row="1" TextWrapping="Wrap"/>
+        <Button x:Name="backBtn" Grid.Column="1" Content="Назад" Margin="298,0,10,0" Click="backBtn_Click" HorizontalAlignment="Right" Width="50" Height="25" VerticalAlignment="Bottom" />
+        <Button x:Name="picImageBtn" Content="Выбрать фото" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Height="25" Click="picImageBtn_Click" Width="80"/>
+        <TextBox x:Name="pathText" Margin="96,0,10,0" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="25"/>
+        <Button x:Name="convertBtn"  Grid.Column="1" Content="Конвертировать" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" Height="25" Click="convertBtn_Click"/>
+        <ComboBox Name="ChangeLang" Grid.Column="1" HorizontalAlignment="Left" Margin="109,0,0,0" VerticalAlignment="Bottom" Width="131" Height="25" SelectionChanged="ChangeLang_SelectionChanged">
+            <TextBlock Text="Русский язык"/>
+            <TextBlock Text="Английский язык"/>
+        </ComboBox>
+    </Grid>
+</Page>

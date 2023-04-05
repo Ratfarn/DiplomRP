@@ -18,8 +18,7 @@ namespace KIP_Translator.Pages
         private string _lWrite;
         private string _lRead;
         private DateTime _thisDate;
-        //CultureInfo culture = new CultureInfo("ru-ru");
-        public static SpeechRecognitionEngine RecogEngine = new SpeechRecognitionEngine();
+
 
         public List<Langs> GetLang { get; set; }
         public TranslatorPage()
@@ -39,11 +38,6 @@ namespace KIP_Translator.Pages
 
             Properties.Settings.Default.PropertyChanged += Settings_PropertyChanged;
 
-            // рекогназер
-            RecogEngine.SpeechRecognized += _recogEngine_SpeechRecognized;
-            Grammar dictationGrammar = new DictationGrammar();
-            // Устанавливаем грамматику для распознавателя речи
-            RecogEngine.LoadGrammar(dictationGrammar);
         }
         private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
@@ -138,20 +132,6 @@ namespace KIP_Translator.Pages
         {
             string text = e.Result.Text;
             textWrite.Text = text;
-            
-        }
-        // преобразование голоса в текст
-        private void speechBtn_Checked(object sender, RoutedEventArgs e)
-        {
-            if (speechBtn.IsChecked == true)
-            {
-                RecogEngine.SetInputToDefaultAudioDevice();
-                RecogEngine.RecognizeAsync(RecognizeMode.Single);
-            }
-            else
-            {
-                RecogEngine.RecognizeAsyncStop();
-            }
         }
     }
 }

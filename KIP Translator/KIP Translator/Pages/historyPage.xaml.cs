@@ -42,8 +42,7 @@ namespace KIP_Translator.Pages
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
             if(NavigationService.CanGoBack)
-                NavigationService.GoBack();
-            
+                NavigationService.Navigate(new Pages.TranslatorPage());
         }
         private void LangUpdate() 
         {
