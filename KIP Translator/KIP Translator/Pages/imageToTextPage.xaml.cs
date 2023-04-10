@@ -40,16 +40,22 @@ namespace KIP_Translator.Pages
         private void picImageBtn_Click(object sender, RoutedEventArgs e)
         {
             BitmapImage bitmap = new BitmapImage();
-
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
-            if (open.ShowDialog() == DialogResult.OK)
+            try
             {
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(open.FileName, UriKind.Absolute);
-                bitmap.EndInit();
+                open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    bitmap.BeginInit();
+                    bitmap.UriSource = new Uri(open.FileName, UriKind.Absolute);
+                    bitmap.EndInit();
 
-                imagePic.Source = bitmap;
-                pathText.Text = open.FileName;
+                    imagePic.Source = bitmap;
+                    pathText.Text = open.FileName;
+                }
+            }
+            catch 
+            {
+                System.Windows.MessageBox.Show("Внимание!\nЗагруженное изображение имеет неправильное расширение","ПРЕДУПРЕЖДЕНИЕ",MessageBoxButton.OK, MessageBoxImage.Warning);
             }
 
         }

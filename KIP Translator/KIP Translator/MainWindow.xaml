@@ -24,7 +24,5 @@
             <Button x:Name="settingsBtn" Content="Настройки" Margin="5,0,5,10" Click="settingsBtn_Click"/>
             <Frame x:Name="settingsFrame" NavigationUIVisibility="Hidden" Source="Pages/settingsPage.xaml" Visibility="Hidden" Margin="5,0,5,0" MouseEnter="settingsFrame_MouseEnter" MouseLeave="settingsFrame_MouseLeave"/>
         </StackPanel>
-        <Label Grid.Column="1" Content="Переведено с помощью" Margin="10,10,459,30" RenderTransformOrigin="0.5,0.5" />
-
     </Grid>
 </Window>

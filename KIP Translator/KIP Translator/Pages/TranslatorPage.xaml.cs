@@ -46,27 +46,34 @@ namespace KIP_Translator.Pages
         }
         public string TranslateText(string input, string _lWrite, string _lRead)
         {
-            string url = String.Format
-            ("https://translate.googleapis.com/translate_a/single?client=gtx&sl={0}&tl={1}&dt=t&q={2}",
-             _lWrite, _lRead, Uri.EscapeUriString(input));
-
-            HttpClient httpClient = new HttpClient();//создание нового экземпляра HTTP-запроса
-            string result = httpClient.GetStringAsync(url).Result;// получение json 
-
-            var jsonData = new JavaScriptSerializer().Deserialize<List<dynamic>>(result);
-
-            var translationItems = jsonData[0];
-
-            string translation = "";
-            foreach (object item in translationItems)//обработка запроса (выявление текста из запроса)
+            try
             {
-                IEnumerable translationLineObject = item as IEnumerable;
-                IEnumerator translationLineString = translationLineObject.GetEnumerator();
-                translationLineString.MoveNext();
-                translation += string.Format(" {0}", Convert.ToString(translationLineString.Current));
+                string url = String.Format
+                ("https://translate.googleapis.com/translate_a/single?client=gtx&sl={0}&tl={1}&dt=t&q={2}",
+                _lWrite, _lRead, Uri.EscapeUriString(input));
+
+                HttpClient httpClient = new HttpClient();//создание нового экземпляра HTTP-запроса
+                string result = httpClient.GetStringAsync(url).Result;// получение json 
+
+                var jsonData = new JavaScriptSerializer().Deserialize<List<dynamic>>(result);
+
+                var translationItems = jsonData[0];
+
+                string translation = "";
+                foreach (object item in translationItems)//обработка запроса (выявление текста из запроса)
+                {
+                    IEnumerable translationLineObject = item as IEnumerable;
+                    IEnumerator translationLineString = translationLineObject.GetEnumerator();
+                    translationLineString.MoveNext();
+                    translation += string.Format(" {0}", Convert.ToString(translationLineString.Current));
+                }
+                if (translation.Length > 1) { translation = translation.Substring(1); };
+                return translation;
             }
-            if (translation.Length > 1) { translation = translation.Substring(1); };
-            return translation;
+            catch 
+            {
+                return "";
+            }
         }
 
         private void changeBtn_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -89,19 +96,25 @@ namespace KIP_Translator.Pages
 
         private void textWrite_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
+            string result;
             if (e.Key == Key.Enter)
             {
-                textRead.Text = TranslateText(textWrite.Text, _lWrite, _lRead);
+                result = TranslateText(textWrite.Text, _lWrite, _lRead);
+                if (!String.IsNullOrEmpty(result))
+                {
+                    textRead.Text = result;
 
-                History hist = new History();
-                hist.TranslateSource = textWrite.Text;
-                hist.TranslateTarget = textRead.Text;
-                hist.Date = _thisDate;
-                hist.IdLangIn = inputLang.SelectedIndex + 1;
-                hist.IdLangOut = outputLang.SelectedIndex + 1;
+                    History hist = new History();
+                    hist.TranslateSource = textWrite.Text;
+                    hist.TranslateTarget = textRead.Text;
+                    hist.Date = _thisDate;
+                    hist.IdLangIn = inputLang.SelectedIndex + 1;
+                    hist.IdLangOut = outputLang.SelectedIndex + 1;
 
-                CoreProject.GetContext().History.Add(hist);
-                CoreProject.GetContext().SaveChanges();
+                    CoreProject.GetContext().History.Add(hist);
+                    CoreProject.GetContext().SaveChanges();
+                }
+                else { MessageBox.Show("Внимание!\n", "ПРЕДУПРЕЖДЕНИЕ", MessageBoxButton.OK, MessageBoxImage.Warning); }
             }
         }
 

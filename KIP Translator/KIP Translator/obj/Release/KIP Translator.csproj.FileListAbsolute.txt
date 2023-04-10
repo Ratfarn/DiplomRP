@@ -1,0 +1,57 @@
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\x86\leptonica-1.82.0.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\x86\tesseract50.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\x64\leptonica-1.82.0.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\x64\tesseract50.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\KIP Translator.exe.config
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\KIP Translator.exe
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\KIP Translator.pdb
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\EntityFramework.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\EntityFramework.SqlServer.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Buffers.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Memory.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Numerics.Vectors.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Text.Encodings.Web.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Text.Json.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.ValueTuple.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\Tesseract.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\EntityFramework.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\EntityFramework.SqlServer.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Buffers.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Memory.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Numerics.Vectors.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Text.Encodings.Web.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Text.Json.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\System.ValueTuple.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\ru\EntityFramework.resources.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.csproj.AssemblyReference.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.csproj.SuggestedBindingRedirects.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\AddLangWindow.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\MainWindow.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\historyPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\imageToTextPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\settingsPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\TranslatorPage.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\App.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator_Content.g.cs
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator_MarkupCompile.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator_MarkupCompile.lref
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\AddLangWindow.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\MainWindow.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\historyPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\imageToTextPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\settingsPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\Pages\TranslatorPage.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.g.resources
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP_Translator.Properties.Resources.resources
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.csproj.GenerateResource.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.csproj.CoreCompileInputs.cache
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.csproj.CopyComplete
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.exe
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Release\KIP Translator.pdb
