@@ -78,8 +78,9 @@ namespace KIP_Translator.Pages
 
         private void changeBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            var item = inputLang.SelectedItem;
             inputLang.SelectedItem = outputLang.SelectedItem;
-            outputLang.SelectedItem = inputLang.SelectedItem;
+            outputLang.SelectedItem = item;
         }
 
         private void inputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
