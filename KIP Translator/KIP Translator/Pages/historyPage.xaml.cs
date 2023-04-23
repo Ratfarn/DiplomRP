@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KIP_Translator.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace KIP_Translator.Pages
     /// </summary>
     public partial class historyPage : Page
     {
-        public List<Langs> ThisLang { get; set; }
+        public List<Lang> ThisLang { get; set; }
         public List<History> ThisHistory { get; set; }
         public historyPage()
         {
@@ -33,9 +34,8 @@ namespace KIP_Translator.Pages
 
         private void delLang_Click(object sender, RoutedEventArgs e)
         {
-            var item = LangList.SelectedItem as Langs;
-            CoreProject.GetContext().Langs.Remove(item);
-            CoreProject.GetContext().SaveChanges();
+            var item = LangList.SelectedItem as Lang;
+            CoreProject.RunNonQuery($"DELETE FROM Lang WHERE Id={item.Id}");
             LangUpdate();
         }
 
@@ -46,12 +46,17 @@ namespace KIP_Translator.Pages
         }
         private void LangUpdate() 
         {
-            ThisLang = CoreProject.GetContext().Langs.ToList();
+            ThisLang = CoreProject.RunQueryList<Lang>("SELECT * FROM Lang");
             LangList.ItemsSource = ThisLang;
         }
         private void HistoryUpdate() 
         {
-            ThisHistory = CoreProject.GetContext().History.ToList();
+            ThisHistory = CoreProject.RunQueryList<History>("SELECT * FROM History");
+            foreach (History history in ThisHistory)
+            {
+                history.LangIn = CoreProject.RunQuery<Lang>($"SELECT * FROM Lang WHERE Id=\'{history.IdLangIn}\'");
+                history.LangOut = CoreProject.RunQuery<Lang>($"SELECT * FROM Lang WHERE Id=\'{history.IdLangOut}\'");
+            }
             historyList.ItemsSource = ThisHistory;
         }
 
@@ -59,8 +64,7 @@ namespace KIP_Translator.Pages
         {
             var item = historyList.SelectedItem as History;
             if (item != null) {
-                CoreProject.GetContext().History.Remove(item);
-                CoreProject.GetContext().SaveChanges();
+                CoreProject.RunNonQuery($"DELETE FROM History WHERE Id={item.Id}");
                 HistoryUpdate();
             }
         }

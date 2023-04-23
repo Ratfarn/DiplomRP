@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:KIP_Translator.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="383" d:DesignWidth="716"
-      Title="TranslatorPage">
+      Title="TranslatorPage" Loaded="Page_Loaded">
 
     <Grid>
         <Grid.RowDefinitions>

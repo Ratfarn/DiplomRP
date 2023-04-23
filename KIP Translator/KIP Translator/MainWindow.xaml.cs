@@ -1,4 +1,5 @@
-﻿using KIP_Translator.Pages;
+﻿using KIP_Translator.Model;
+using KIP_Translator.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,9 @@ namespace KIP_Translator
             timer.Tick += Timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
         }
+
         int time = 0;
+
         private void Timer_Tick(object sender, EventArgs e)
         {
             time++;

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using KIP_Translator.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,14 +31,8 @@ namespace KIP_Translator
         {
             if (NameLangText.Text != string.Empty && CodeLangText.Text != string.Empty)
             {
-                Langs AddLangs = new Langs();
-
-                AddLangs.NameLang = NameLangText.Text;
-                AddLangs.CodeLang = CodeLangText.Text;
-
-                CoreProject.GetContext().Langs.Add(AddLangs);
-                CoreProject.GetContext().SaveChanges();
-
+                CoreProject.RunNonQuery($"INSERT INTO Lang(NameLang, CodeLang) VALUES (\'{NameLangText.Text}\', \'{CodeLangText.Text}\')");
+                this.DialogResult = true;
                 this.Close();
             }
             else { MessageBox.Show("Заполните все поля","ВНИМАНИЕ"); }

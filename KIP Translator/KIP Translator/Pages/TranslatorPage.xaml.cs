@@ -8,8 +8,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Speech.Synthesis;
-using System.Speech.Recognition; //здесь подключение библиотеки на которую ругается
+using System.Speech.Recognition;
 using System.Globalization;
+using KIP_Translator.Model;
 
 namespace KIP_Translator.Pages
 {
@@ -19,19 +20,12 @@ namespace KIP_Translator.Pages
         private string _lRead;
         private DateTime _thisDate;
 
-
-        public List<Langs> GetLang { get; set; }
+        public List<Lang> GetLang { get; set; }
         public TranslatorPage()
         {
             InitializeComponent();
             DataContext = this;
-
-            GetLang = CoreProject.GetContext().Langs.ToList();
-            inputLang.ItemsSource = GetLang;
-            outputLang.ItemsSource = GetLang;
-
-            inputLang.SelectedIndex = 0;
-            outputLang.SelectedIndex = 0;
+            LoadData();
 
             _thisDate = DateTime.Today;
             _thisDate.ToShortDateString();
@@ -85,38 +79,44 @@ namespace KIP_Translator.Pages
 
         private void inputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var item = CoreProject.GetContext().Langs.ToList();
-            _lWrite = item.First(x => x == inputLang.SelectedItem as Langs).CodeLang;
+            if (inputLang.SelectedItem != null)
+            {
+                _lWrite = (inputLang.SelectedItem as Lang).CodeLang;
+            }
+            
         }
 
         private void outputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var item = CoreProject.GetContext().Langs.ToList();
-            _lRead = item.First(x => x == outputLang.SelectedItem as Langs).CodeLang;
+            if (outputLang.SelectedItem != null)
+            {
+                _lRead = (outputLang.SelectedItem as Lang).CodeLang;
+            }
         }
 
         private void textWrite_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             string result;
-            if (e.Key == Key.Enter)
+            if (e.Key == Key.Enter && (Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift)))
             {
+                textWrite.Text += Environment.NewLine;
+                textWrite.CaretIndex = textWrite.Text.Length;
+                e.Handled = true;
+            }
+            else if (e.Key == Key.Enter)
+            {
+                
                 result = TranslateText(textWrite.Text, _lWrite, _lRead);
                 if (!String.IsNullOrEmpty(result))
                 {
                     textRead.Text = result;
-
-                    History hist = new History();
-                    hist.TranslateSource = textWrite.Text;
-                    hist.TranslateTarget = textRead.Text;
-                    hist.Date = _thisDate;
-                    hist.IdLangIn = inputLang.SelectedIndex + 1;
-                    hist.IdLangOut = outputLang.SelectedIndex + 1;
-
-                    CoreProject.GetContext().History.Add(hist);
-                    CoreProject.GetContext().SaveChanges();
+                    CoreProject.RunNonQuery($"INSERT INTO History(TranslateSource, TranslateTarget, Date, IdLangIn, IdLangOut) VALUES(\'{textWrite.Text}\', \'{textRead.Text}\', \'{_thisDate}\', \'{inputLang.SelectedIndex + 1}\', \'{outputLang.SelectedIndex + 1}\')");
                 }
                 else { MessageBox.Show("Внимание!\n", "ПРЕДУПРЕЖДЕНИЕ", MessageBoxButton.OK, MessageBoxImage.Warning); }
+                e.Handled = true;
             }
+
+            
         }
 
         private static void TextToSpeech(string a)
@@ -146,6 +146,21 @@ namespace KIP_Translator.Pages
         {
             string text = e.Result.Text;
             textWrite.Text = text;
+        }
+
+        private void LoadData()
+        {
+            GetLang = CoreProject.RunQueryList<Lang>("SELECT * FROM Lang");
+            inputLang.ItemsSource = GetLang;
+            outputLang.ItemsSource = GetLang;
+
+            inputLang.SelectedIndex = 0;
+            outputLang.SelectedIndex = 0;
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadData();
         }
     }
 }

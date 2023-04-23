@@ -41,8 +41,6 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.d
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.dll
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.xml
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.xml
-D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\ru\EntityFramework.resources.dll
-D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\KIP Translator_Content.g.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.g.cs
 D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.baml
 D:\Diplom V1\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe.config
@@ -104,4 +102,67 @@ D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x86\tesseract50.d
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x64\leptonica-1.82.0.dll
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\x64\tesseract50.dll
 D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\Tesseract.dll
-D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\x86\leptonica-1.82.0.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\x86\tesseract50.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\x64\leptonica-1.82.0.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\x64\tesseract50.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe.config
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\KIP Translator.exe
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\KIP Translator.pdb
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\EntityFramework.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Buffers.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Memory.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\Tesseract.dll
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\EntityFramework.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Buffers.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Memory.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Text.Json.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\bin\Debug\System.ValueTuple.xml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.AssemblyReference.cache
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\MainWindow.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\imageToTextPage.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\TranslatorPage.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\App.g.cs
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator_MarkupCompile.cache
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator_MarkupCompile.lref
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\AddLangWindow.baml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\MainWindow.baml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\historyPage.baml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\imageToTextPage.baml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\settingsPage.baml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\Pages\TranslatorPage.baml
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.g.resources
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP_Translator.Properties.Resources.resources
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.GenerateResource.cache
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CoreCompileInputs.cache
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.csproj.CopyComplete
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.exe
+C:\Users\Net2Fox\Desktop\DiplomRP-main\KIP Translator\KIP Translator\obj\Debug\KIP Translator.pdb
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Visual studio\repos\KIP Translator\KIP Translator\bin\Debug\System.Data.SQLite.xml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\Dictionary.baml
+D:\Visual studio\repos\KIP Translator\KIP Translator\obj\Debug\App.baml

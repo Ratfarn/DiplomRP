@@ -26,14 +26,14 @@
                             <Rectangle Width="10"/>
                             <WrapPanel>
                                 <StackPanel>
-                                    <TextBlock Text="{Binding Langs.NameLang}"/>
+                                    <TextBlock Text="{Binding LangIn.NameLang}"/>
                                     <TextBlock Text="{Binding TranslateSource}"/>
                                 </StackPanel>
                                 <StackPanel>
                                     <Rectangle Width="40"/>
                                 </StackPanel>
                                 <StackPanel>
-                                    <TextBlock Text="{Binding Langs1.NameLang}"/>
+                                    <TextBlock Text="{Binding LangOut.NameLang}"/>
                                     <TextBlock Text="{Binding TranslateTarget}"/>
                                 </StackPanel>
                             </WrapPanel>
