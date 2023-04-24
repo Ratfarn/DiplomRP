@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Web.Script.Serialization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Speech.Synthesis;
-using System.Speech.Recognition;
-using System.Globalization;
 using KIP_Translator.Model;
 
 namespace KIP_Translator.Pages
@@ -140,12 +137,6 @@ namespace KIP_Translator.Pages
             {
                 TextToSpeech(textRead.Text);
             }
-        }
-
-        private void _recogEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e) 
-        {
-            string text = e.Result.Text;
-            textWrite.Text = text;
         }
 
         private void LoadData()

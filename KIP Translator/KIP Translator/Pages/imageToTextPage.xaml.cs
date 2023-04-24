@@ -42,7 +42,7 @@ namespace KIP_Translator.Pages
             BitmapImage bitmap = new BitmapImage();
             try
             {
-                open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+                open.Filter = "Image Files(*.jpg; *.jpeg; *.bmp;)|*.jpg; *.jpeg; *.bmp;";
                 if (open.ShowDialog() == DialogResult.OK)
                 {
                     bitmap.BeginInit();
