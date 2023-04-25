@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KIP_Translator"
         mc:Ignorable="d"
-        Title="AddLangWindow" MinHeight="140" MinWidth="280" MaxHeight="140" MaxWidth="280">
+        Title="AddLangWindow" MinHeight="140" MinWidth="280" MaxHeight="140" MaxWidth="280"
+        Icon="TranslatorIcon.png">
     <Grid Background="#51b6a2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="169*"/>

@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dbproject.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dbproject.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("translatoricon.png")]
 
 

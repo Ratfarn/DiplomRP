@@ -207,6 +207,9 @@
     <Resource Include="Images\speech.png" />
     <Resource Include="Images\changeLang.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TranslatorIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Tesseract.5.2.0\build\Tesseract.targets" Condition="Exists('..\packages\Tesseract.5.2.0\build\Tesseract.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

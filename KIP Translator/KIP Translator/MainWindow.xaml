@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KIP_Translator"
         mc:Ignorable="d"
-        Title="KIP Translator" MinHeight="500" MinWidth="850" Height="500" Width="850" >
+        Title="KIP Translator" MinHeight="500" MinWidth="850" Height="500" Width="850" 
+        Icon="TranslatorIcon.png">
     <Grid Background="#51b6a2">
         <Grid.RowDefinitions>
             <RowDefinition Height="19*"/>
