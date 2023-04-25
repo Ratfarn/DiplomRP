@@ -62,13 +62,16 @@ namespace KIP_Translator.Pages
 
         private void convertBtn_Click(object sender, RoutedEventArgs e)
         {
-            using (var engine = new TesseractEngine(@"./tessdata", chooseLang, EngineMode.Default))
+            if (open.FileName != string.Empty)
             {
-                using (var img = Pix.LoadFromFile(open.FileName))
+                using (var engine = new TesseractEngine(@"./tessdata", chooseLang, EngineMode.Default))
                 {
-                    using (var page = engine.Process(img))
+                    using (var img = Pix.LoadFromFile(open.FileName))
                     {
-                        imageText.Text = page.GetText();
+                        using (var page = engine.Process(img))
+                        {
+                            imageText.Text = page.GetText();
+                        }
                     }
                 }
             }

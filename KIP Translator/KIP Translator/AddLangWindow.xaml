@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KIP_Translator"
         mc:Ignorable="d"
         Title="AddLangWindow" MinHeight="140" MinWidth="280" MaxHeight="140" MaxWidth="280">
-    <Grid>
+    <Grid Background="#51b6a2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="169*"/>
             <ColumnDefinition Width="111*"/>
