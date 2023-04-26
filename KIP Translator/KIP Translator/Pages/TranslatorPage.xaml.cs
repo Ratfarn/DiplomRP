@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Speech.Synthesis;
 using KIP_Translator.Model;
+using System.Windows.Navigation;
 
 namespace KIP_Translator.Pages
 {
@@ -152,6 +153,12 @@ namespace KIP_Translator.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             LoadData();
+            if (Global.text != null || Global.text != string.Empty) 
+            {
+                textWrite.Text = Global.text;
+                Global.text = string.Empty;
+            }
         }
+
     }
 }

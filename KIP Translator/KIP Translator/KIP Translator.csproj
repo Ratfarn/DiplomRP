@@ -116,6 +116,7 @@
       <DependentUpon>AddLangWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="CoreProject.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="Model\History.cs" />
     <Compile Include="Model\Lang.cs" />
     <Compile Include="Pages\historyPage.xaml.cs">

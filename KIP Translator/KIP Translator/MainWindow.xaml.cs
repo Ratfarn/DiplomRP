@@ -24,12 +24,12 @@ namespace KIP_Translator
     public partial class MainWindow : Window
     {
         DispatcherTimer timer = new DispatcherTimer();
-        TranslatorPage page;
         public MainWindow()
         {
             InitializeComponent();
             timer.Tick += Timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
+
         }
 
         int time = 0;

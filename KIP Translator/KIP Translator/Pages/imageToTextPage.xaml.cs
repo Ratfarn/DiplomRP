@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -87,6 +89,15 @@ namespace KIP_Translator.Pages
                 case 1:
                     chooseLang = "eng";
                     break;
+            }
+        }
+
+        private void ToTranslateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (imageText.Text != string.Empty) 
+            {
+                Global.text = imageText.Text;
+                NavigationService.Navigate(new Pages.TranslatorPage());
             }
         }
     }

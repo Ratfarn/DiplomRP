@@ -22,10 +22,11 @@
         <Button x:Name="backBtn" Grid.Column="1" Content="Назад" Margin="298,0,10,0" Click="backBtn_Click" HorizontalAlignment="Right" Width="50" Height="25" VerticalAlignment="Bottom" />
         <Button x:Name="picImageBtn" Content="Выбрать фото" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Height="25" Click="picImageBtn_Click" Width="80"/>
         <TextBox x:Name="pathText" Margin="96,0,10,0" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="25"/>
-        <Button x:Name="convertBtn"  Grid.Column="1" Content="Конвертировать" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" Height="25" Click="convertBtn_Click"/>
-        <ComboBox Name="ChangeLang" Grid.Column="1" HorizontalAlignment="Left" Margin="109,0,0,0" VerticalAlignment="Bottom" Width="131" Height="25" SelectionChanged="ChangeLang_SelectionChanged">
+        <Button x:Name="convertBtn"  Grid.Column="1" Content="Распознать" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" Height="25" Click="convertBtn_Click"/>
+        <ComboBox Name="ChangeLang" Grid.Column="1" HorizontalAlignment="Left" Margin="87,0,0,0" VerticalAlignment="Bottom" Width="131" Height="25" SelectionChanged="ChangeLang_SelectionChanged">
             <TextBlock Text="Русский язык"/>
             <TextBlock Text="Английский язык"/>
         </ComboBox>
+        <Button x:Name="ToTranslateBtn" Grid.Column="1" Content="Перевести" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,67,0" Height="25" Click="ToTranslateBtn_Click"/>
     </Grid>
 </Page>
