@@ -108,7 +108,7 @@ namespace KIP_Translator.Pages
                 if (!String.IsNullOrEmpty(result))
                 {
                     textRead.Text = result;
-                    CoreProject.RunNonQuery($"INSERT INTO History(TranslateSource, TranslateTarget, Date, IdLangIn, IdLangOut) VALUES(\'{textWrite.Text}\', \'{textRead.Text}\', \'{_thisDate}\', \'{inputLang.SelectedIndex + 1}\', \'{outputLang.SelectedIndex + 1}\')");
+                    CoreProject.RunNonQuery($"INSERT INTO History(TranslateSource, TranslateTarget, Date, IdLangIn, IdLangOut) VALUES(\'{textWrite.Text}\', \'{textRead.Text}\', \'{_thisDate}\', \'{(inputLang.SelectedItem as Lang).Id}\', \'{(outputLang.SelectedItem as Lang).Id}\')");
                 }
                 else { MessageBox.Show("Внимание!\n", "ПРЕДУПРЕЖДЕНИЕ", MessageBoxButton.OK, MessageBoxImage.Warning); }
                 e.Handled = true;

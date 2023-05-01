@@ -14,8 +14,8 @@
             <RowDefinition Height="397*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="647*"/>
-            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="621*"/>
+            <ColumnDefinition Width="225*"/>
         </Grid.ColumnDefinitions>
         <ListView x:Name="historyList" ScrollViewer.VerticalScrollBarVisibility="Disabled" d:ItemsSource="{d:SampleData}" Grid.Row="1">
             <ListView.ItemTemplate>
@@ -57,7 +57,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Grid.Column="1" Name="BackBtn" Click="BackBtn_Click" Content="Назад" Margin="20,10,20,10" />
-        <Button x:Name="DelHist" Click="DelHist_Click" HorizontalAlignment="Right" Margin="10,10,10,10" VerticalAlignment="Center">
+        <Button x:Name="DelHist" Click="DelHist_Click" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Column="0" Height="24" Width="24">
             <Image Source="/Images/trash.png" Width="20" Height="20"/>
         </Button>
     </Grid>

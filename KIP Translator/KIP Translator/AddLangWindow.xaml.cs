@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -40,7 +41,7 @@ namespace KIP_Translator
 
         private void CodeLangText_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (CodeLangText.Text.Length > 2)
+            if (CodeLangText.Text.Length > 5)
             {
                 CodeLangText.Background = new SolidColorBrush(Colors.Red);
                 addLangBtn.IsEnabled = false;
@@ -50,6 +51,12 @@ namespace KIP_Translator
                 CodeLangText.Background = new SolidColorBrush(Colors.White);
                 addLangBtn.IsEnabled = true;
             }
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
         }
     }
 }
