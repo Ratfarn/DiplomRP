@@ -17,7 +17,6 @@ namespace KIP_Translator.Pages
         private string _lWrite;
         private string _lRead;
         private DateTime _thisDate;
-
         public List<Lang> GetLang { get; set; }
         public TranslatorPage()
         {
@@ -30,6 +29,7 @@ namespace KIP_Translator.Pages
 
             Properties.Settings.Default.PropertyChanged += Settings_PropertyChanged;
 
+            textWrite.ToolTip = "Для перевода текста нажмите 'Enter'\nА для перехода на следующую строку используйте 'Shift+Enter'";
         }
         private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
