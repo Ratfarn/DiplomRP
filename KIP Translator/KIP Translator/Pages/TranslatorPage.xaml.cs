@@ -18,6 +18,7 @@ namespace KIP_Translator.Pages
         private string _lRead;
         private DateTime _thisDate;
         public List<Lang> GetLang { get; set; }
+        SpeechSynthesizer synthesizer = new SpeechSynthesizer();
         public TranslatorPage()
         {
             InitializeComponent();
@@ -73,6 +74,10 @@ namespace KIP_Translator.Pages
             var item = inputLang.SelectedItem;
             inputLang.SelectedItem = outputLang.SelectedItem;
             outputLang.SelectedItem = item;
+
+            var text = textWrite.Text;
+            textWrite.Text = textRead.Text;
+            textRead.Text = text;
         }
 
         private void inputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -117,26 +122,47 @@ namespace KIP_Translator.Pages
             
         }
 
-        private static void TextToSpeech(string a)
-        {
-            SpeechSynthesizer _speech = new SpeechSynthesizer();
-            _speech.Speak(a);
-            _speech.Dispose();
-        }
-
         private void sourceSpeech_Click(object sender, RoutedEventArgs e)
         {
-            if (textWrite.Text != string.Empty) 
+            if (synthesizer == null)
             {
-                TextToSpeech(textWrite.Text);
+                synthesizer = new SpeechSynthesizer();
+            }
+
+            if (synthesizer.State == SynthesizerState.Speaking)
+            {
+                synthesizer.Pause();
+            }
+            else
+            {
+                string text = textWrite.Text;
+
+                if (!string.IsNullOrEmpty(text))
+                {
+                    synthesizer.SpeakAsync(text);
+                }
             }
         }
 
         private void targetSpeech_Click(object sender, RoutedEventArgs e)
         {
-            if (textRead.Text != string.Empty)
+            if (synthesizer == null)
             {
-                TextToSpeech(textRead.Text);
+                synthesizer = new SpeechSynthesizer();
+            }
+
+            if (synthesizer.State == SynthesizerState.Speaking)
+            {
+                synthesizer.Pause();
+            }
+            else
+            {
+                string text = textRead.Text;
+
+                if (!string.IsNullOrEmpty(text))
+                {
+                    synthesizer.SpeakAsync(text);
+                }
             }
         }
 
