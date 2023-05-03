@@ -41,15 +41,15 @@ namespace KIP_Translator
 
         private void CodeLangText_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (CodeLangText.Text.Length > 5)
-            {
-                CodeLangText.Background = new SolidColorBrush(Colors.Red);
-                addLangBtn.IsEnabled = false;
-            }
-            else
+            if (CodeLangText.Text.Length <= 8)
             {
                 CodeLangText.Background = new SolidColorBrush(Colors.White);
                 addLangBtn.IsEnabled = true;
+            }
+            else
+            {
+                CodeLangText.Background = new SolidColorBrush(Colors.Red);
+                addLangBtn.IsEnabled = false;
             }
         }
 
