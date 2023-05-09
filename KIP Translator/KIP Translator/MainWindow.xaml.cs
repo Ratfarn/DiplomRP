@@ -29,11 +29,8 @@ namespace KIP_Translator
             InitializeComponent();
             timer.Tick += Timer_Tick;
             timer.Interval = new TimeSpan(0, 0, 1);
-
         }
-
         int time = 0;
-
         private void Timer_Tick(object sender, EventArgs e)
         {
             time++;
@@ -53,17 +50,14 @@ namespace KIP_Translator
         {
             timer.Start();
         }
-
         private void settingsBtn_Click(object sender, RoutedEventArgs e)
         {
             settingsFrame.Visibility = Visibility.Visible;
         }
-
         private void historyBtn_Click(object sender, RoutedEventArgs e)
         {
             nextPage.NavigationService.Navigate(new Pages.historyPage());
         }
-
         private void imageConvertBtn_Click(object sender, RoutedEventArgs e)
         {
             nextPage.NavigationService.Navigate(new Pages.imageToTextPage());

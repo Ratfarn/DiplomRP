@@ -24,7 +24,6 @@ namespace KIP_Translator.Pages
         {
             InitializeComponent();           
         }
-
         private void AddLang_Click(object sender, RoutedEventArgs e)
         {
             AddLangWindow Window = new AddLangWindow();
@@ -35,7 +34,6 @@ namespace KIP_Translator.Pages
                 mainWindow.nextPage.Refresh();
             }
         }
-
         private void fontSizeValue_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             Properties.Settings.Default.fontSizeValue = fontSizeValue.Value;

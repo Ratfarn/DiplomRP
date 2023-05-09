@@ -31,14 +31,12 @@ namespace KIP_Translator.Pages
             LangUpdate();
             HistoryUpdate();
         }
-
         private void delLang_Click(object sender, RoutedEventArgs e)
         {
             var item = LangList.SelectedItem as Lang;
             CoreProject.RunNonQuery($"DELETE FROM Lang WHERE Id={item.Id}");
             LangUpdate();
         }
-
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
             if(NavigationService.CanGoBack)
@@ -59,7 +57,6 @@ namespace KIP_Translator.Pages
             }
             historyList.ItemsSource = ThisHistory;
         }
-
         private void DelHist_Click(object sender, RoutedEventArgs e)
         {
             var item = historyList.SelectedItem as History;

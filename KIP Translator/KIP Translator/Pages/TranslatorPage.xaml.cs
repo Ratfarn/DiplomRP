@@ -68,7 +68,6 @@ namespace KIP_Translator.Pages
                 return "";
             }
         }
-
         private void changeBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             var item = inputLang.SelectedItem;
@@ -79,16 +78,13 @@ namespace KIP_Translator.Pages
             textWrite.Text = textRead.Text;
             textRead.Text = text;
         }
-
         private void inputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (inputLang.SelectedItem != null)
             {
                 _lWrite = (inputLang.SelectedItem as Lang).CodeLang;
             }
-            
         }
-
         private void outputLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (outputLang.SelectedItem != null)
@@ -96,7 +92,6 @@ namespace KIP_Translator.Pages
                 _lRead = (outputLang.SelectedItem as Lang).CodeLang;
             }
         }
-
         private void textWrite_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             string result;
@@ -108,7 +103,6 @@ namespace KIP_Translator.Pages
             }
             else if (e.Key == Key.Enter)
             {
-                
                 result = TranslateText(textWrite.Text, _lWrite, _lRead);
                 if (!String.IsNullOrEmpty(result))
                 {
@@ -118,17 +112,13 @@ namespace KIP_Translator.Pages
                 else { MessageBox.Show("Внимание!\n", "ПРЕДУПРЕЖДЕНИЕ", MessageBoxButton.OK, MessageBoxImage.Warning); }
                 e.Handled = true;
             }
-
-            
         }
-
         private void sourceSpeech_Click(object sender, RoutedEventArgs e)
         {
             if (synthesizer == null)
             {
                 synthesizer = new SpeechSynthesizer();
             }
-
             if (synthesizer.State == SynthesizerState.Speaking)
             {
                 synthesizer.Pause();
@@ -150,7 +140,6 @@ namespace KIP_Translator.Pages
             {
                 synthesizer = new SpeechSynthesizer();
             }
-
             if (synthesizer.State == SynthesizerState.Speaking)
             {
                 synthesizer.Pause();
@@ -165,7 +154,6 @@ namespace KIP_Translator.Pages
                 }
             }
         }
-
         private void LoadData()
         {
             GetLang = CoreProject.RunQueryList<Lang>("SELECT * FROM Lang");
@@ -175,7 +163,6 @@ namespace KIP_Translator.Pages
             inputLang.SelectedIndex = 0;
             outputLang.SelectedIndex = 0;
         }
-
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             LoadData();
@@ -185,6 +172,5 @@ namespace KIP_Translator.Pages
                 Global.text = string.Empty;
             }
         }
-
     }
 }

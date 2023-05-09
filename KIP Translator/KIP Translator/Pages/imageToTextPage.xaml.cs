@@ -32,13 +32,11 @@ namespace KIP_Translator.Pages
             InitializeComponent();
             ChangeLang.SelectedIndex = 0;
         }
-
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             if (NavigationService.CanGoBack)
                 NavigationService.Navigate(new Pages.TranslatorPage());
         }
-
         private void picImageBtn_Click(object sender, RoutedEventArgs e)
         {
             BitmapImage bitmap = new BitmapImage();
@@ -59,9 +57,7 @@ namespace KIP_Translator.Pages
             {
                 System.Windows.MessageBox.Show("Внимание!\nЗагруженное изображение имеет неправильное расширение","ПРЕДУПРЕЖДЕНИЕ",MessageBoxButton.OK, MessageBoxImage.Warning);
             }
-
         }
-
         private void convertBtn_Click(object sender, RoutedEventArgs e)
         {
             if (open.FileName != string.Empty)
@@ -78,7 +74,6 @@ namespace KIP_Translator.Pages
                 }
             }
         }
-
         private void ChangeLang_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             switch (ChangeLang.SelectedIndex)
@@ -91,7 +86,6 @@ namespace KIP_Translator.Pages
                     break;
             }
         }
-
         private void ToTranslateBtn_Click(object sender, RoutedEventArgs e)
         {
             if (imageText.Text != string.Empty) 
