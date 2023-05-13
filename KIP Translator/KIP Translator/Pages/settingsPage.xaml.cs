@@ -22,7 +22,8 @@ namespace KIP_Translator.Pages
     {
         public settingsPage()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            TitleMob.Content = "МОБИЛЬНАЯ\n    ВЕРСИЯ";
         }
         private void AddLang_Click(object sender, RoutedEventArgs e)
         {

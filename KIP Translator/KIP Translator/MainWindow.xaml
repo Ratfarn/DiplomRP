@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="KIP Translator" MinHeight="500" MinWidth="850" Height="500" Width="850" 
         Icon="TranslatorIcon.png">
-    <Grid Background="#51b6a2">
+    <Grid Background="#007D8C">
         <Grid.RowDefinitions>
             <RowDefinition Height="19*"/>
             <RowDefinition Height="102*"/>

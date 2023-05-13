@@ -15,6 +15,7 @@ namespace KIP_Translator
     {
         private static string connectionString = "Data Source=DBLang.db";
         private static SQLiteConnection sqLiteConnection;
+        //получение только одной строки
         public static T RunQuery<T>(string query) where T : new()
         {
             sqLiteConnection = new SQLiteConnection(connectionString);
@@ -43,7 +44,7 @@ namespace KIP_Translator
             }
             return instance;
         }
-
+        // получение всей таблицы
         public static List<T> RunQueryList<T>(string query) where T : new()
         {
             sqLiteConnection = new SQLiteConnection(connectionString);
@@ -75,7 +76,7 @@ namespace KIP_Translator
             }
             return instances;
         }
-
+        // для добавления, изменения или удаление
         public static bool RunNonQuery(string query)
         {
             sqLiteConnection = new SQLiteConnection(connectionString);

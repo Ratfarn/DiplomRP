@@ -9,6 +9,8 @@ using System.Windows.Input;
 using System.Speech.Synthesis;
 using KIP_Translator.Model;
 using System.Windows.Navigation;
+using System.Speech.Recognition;
+using System.Globalization;
 
 namespace KIP_Translator.Pages
 {
@@ -18,7 +20,7 @@ namespace KIP_Translator.Pages
         private string _lRead;
         private DateTime _thisDate;
         public List<Lang> GetLang { get; set; }
-        SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+        private SpeechSynthesizer synthesizer = new SpeechSynthesizer();
         public TranslatorPage()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace KIP_Translator.Pages
             Properties.Settings.Default.PropertyChanged += Settings_PropertyChanged;
 
             textWrite.ToolTip = "Для перевода текста нажмите 'Enter'\nА для перехода на следующую строку используйте 'Shift+Enter'";
+
         }
         private void Settings_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {

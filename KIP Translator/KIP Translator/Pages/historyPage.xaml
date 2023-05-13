@@ -22,19 +22,19 @@
                 <DataTemplate>
                     <Grid>
                         <WrapPanel Margin="0,0,0,10">
-                            <TextBlock Text="{Binding Date, StringFormat=d}"/>
+                            <TextBlock Text="{Binding Date, StringFormat=d}" />
                             <Rectangle Width="10"/>
                             <WrapPanel>
                                 <StackPanel>
-                                    <TextBlock Text="{Binding LangIn.NameLang}"/>
-                                    <TextBlock Text="{Binding TranslateSource}"/>
+                                    <TextBlock Text="{Binding LangIn.NameLang}" />
+                                    <TextBlock Text="{Binding TranslateSource}" />
                                 </StackPanel>
                                 <StackPanel>
                                     <Rectangle Width="40"/>
                                 </StackPanel>
                                 <StackPanel>
-                                    <TextBlock Text="{Binding LangOut.NameLang}"/>
-                                    <TextBlock Text="{Binding TranslateTarget}"/>
+                                    <TextBlock Text="{Binding LangOut.NameLang}" />
+                                    <TextBlock Text="{Binding TranslateTarget}" />
                                 </StackPanel>
                             </WrapPanel>
                         </WrapPanel>
@@ -44,7 +44,7 @@
         </ListView>
         <DataGrid x:Name="LangList" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False" VerticalScrollBarVisibility="Hidden" Grid.Column="1" Grid.Row="1">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Язык" Binding="{Binding NameLang}"/>
+                <DataGridTextColumn Header="Язык" Binding="{Binding NameLang}" />
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
