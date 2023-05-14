@@ -11,9 +11,9 @@
     <Grid Background="#ead9cd">
         <Slider Name="fontSizeValue" IsSnapToTickEnabled="True"  TickFrequency="1" TickPlacement="BottomRight" Minimum="12" Maximum="24" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" Width="80" ValueChanged="fontSizeValue_ValueChanged"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" Text="Размер шрифта:" VerticalAlignment="Top" Width="92"/>
-        <Button x:Name="AddLang" Content="Добавить язык" HorizontalAlignment="Center" Margin="0,220,0,0" VerticalAlignment="Top" Click="AddLang_Click"/>
+        <Button x:Name="AddLang" Content="Добавить язык" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Click="AddLang_Click"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" FontSize="{Binding ElementName=fontSizeValue, Path=Value}" Text="Привет" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Center" Height="88" Margin="0,84,0,0" VerticalAlignment="Top" Width="92" Source="\Images\qrcode_cloud.mail.ru.png"/>
-        <Label Name="TitleMob" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Center" Height="88" Margin="0,98,0,0" VerticalAlignment="Top" Width="88" Source="\Images\qrcode_cloud.mail.ru.png"/>
+        <Label Name="TitleMob" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>
