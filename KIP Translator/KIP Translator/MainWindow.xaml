@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KIP_Translator"
         mc:Ignorable="d"
         Title="KIP Translator" MinHeight="500" MinWidth="850" Height="500" Width="850" 
-        Icon="TranslatorIcon.png">
+        Icon="TranslatorIcon.png" WindowStartupLocation="CenterScreen">
     <Grid Background="#007D8C">
         <Grid.RowDefinitions>
             <RowDefinition Height="19*"/>
